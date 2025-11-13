@@ -21,11 +21,11 @@ def process_payment(credit_card, cost)
   # 팁 비율 결정
   normal_tip = 0.10
 
-  if cost % 3 == 0    # 3%
+  if (cost % 3).zero? # 3%
     normal_tip = 0.03
-  elsif cost % 5 == 0
+  elsif (cost % 5).zero?
     normal_tip = 0.05 # 5%
-  elsif cost % 7 == 0
+  elsif (cost % 7).zero?
     normal_tip = 0.07 # 7%
   end
 
@@ -37,7 +37,7 @@ def process_payment(credit_card, cost)
   result = cost + total_tax + total_tip
 
   # 총 금액이 300이 넘는지 확인
-  return -1.0 if 300 < result
+  return -1.0 if result > 300
 
   result.round(2)
 end
