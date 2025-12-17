@@ -30,11 +30,11 @@ class Plant
   # 광합성 시간에 따른 햇빛량 조절
   def photosynthesize(sunlight_hours)
     if sunlight_hours > 12
-      'Too much sunlight!'
+      "#{@species} received too much sunlight!"
     elsif sunlight_hours >= 8
-      'Healthy growth!'
+      "#{@species} is having healthy growth!"
     else
-      'Needs more sunlight!'
+      "#{@species} needs more sunlight!"
     end
   end
 
@@ -42,11 +42,11 @@ class Plant
   def absorb_water(water_amount)
     # 조건문을 사용하여 수분 흡수량에 따른 결과를 반환합니다.
     if water_amount < 1
-      'Needs more water!'
+      "#{@species} needs more water!"
     elsif water_amount <= 2 # 1리터 이상 2리터 이하
-      'Perfectly watered!'
+      "#{@species} is perfectly watered!"
     else # 2리터 초과
-      'Overwatered!'
+      "#{@species} is overwatered!"
     end
   end
 end
@@ -56,10 +56,10 @@ plant1 = Plant.new('Rose', 10, 1)
 puts plant1.photosynthesize(6)
 puts plant1.absorb_water(0)
 
-plant2 = Plant.new("Oak", 200, 50)
+plant2 = Plant.new('Oak', 200, 50)
 puts plant2.photosynthesize(10)
 puts plant2.absorb_water(2)
 
-plant3 = Plant.new("Cactus", 30, 100)
+plant3 = Plant.new('Cactus', 30, 100)
 puts plant3.photosynthesize(15)
 puts plant3.absorb_water(3)
