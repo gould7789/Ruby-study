@@ -3,7 +3,7 @@
 # 例外処理
 def divide(a, b)
   a / b
-rescue ZeroDivisionError # 구체적인 에러명을 입력해주는 것이 좋음ㄴ
+rescue ZeroDivisionError # 구체적인 에러명을 입력해주는 것이 좋음
   puts '0で割ることはできません'
 end
 
