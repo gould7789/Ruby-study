@@ -12,11 +12,11 @@ while counter <= 5
   counter += 1
 end
 
-# ----- 이러테이터: each 메서드 -----
+# ----- Iterator: each 메서드 -----
 # 1) 순회할 배열을 정의
 languages = ["Ruby", "Python", "JavaScript", "Elixir"]
 
-# 2) each 이터레이터를 사용하여 배열을 순회
+# 2) each Iterator를 사용하여 배열을 순회
 # |language|는 배열의 각 요소를 임시로 저장하는 '블록 변수'
 languages.each do |language|
   puts "#{language}는 웹 개발에 유용합니다."
