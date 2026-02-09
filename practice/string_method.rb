@@ -12,7 +12,7 @@ puts text.rstrip # 뒤의 공백만 제거
 # [2] gsub: 특정 요소를 제거하고 원하는 요소로 대체
 phone = '090-1234-5678'
 puts phone.gsub('-', '') # 09012345678
-puts phone.gsub('-', '@') # 09012345678
+puts phone.gsub('-', '@') # 090@1234@5678
 
 # [3] split: 문자열을 분배해서 배열로 반환
 fruits = 'りんご, バナナ, オレンジ'
