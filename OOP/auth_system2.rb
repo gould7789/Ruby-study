@@ -41,7 +41,7 @@ class AuthSystem
   # 비밀번호 조회
   # 비밀번호를 확인 할 때도 확인을 거침
   def reveal_password
-    # 사용자로부터 기존 비밀번호를 입력받아서 확인
+    # 사용자로부터 기존 비밀번호를 입력받아서 확인함
     print '기존 비밀번호를 입력해주세요: '
     current_pw = gets.chomp
 
